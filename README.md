@@ -8,9 +8,8 @@ and CSV/PNG export.
 **Live app:** https://du-caid.github.io/policy-scoring-dashboard/
 
 ## Architecture
-- **Frontend** (this repo root): React 19 + Vite + Tailwind, deployed to GitHub Pages via `gh-pages`.
-- **Backend** (`backend/`): FastAPI on a Hugging Face Space (Docker), calling the
-  HF Inference router (`MODEL_ID`, default Mistral-7B-Instruct-v0.3).
+- **Frontend** (repo root): React 19 + Vite + Tailwind, deployed to GitHub Pages via `gh-pages`.
+- **Backend** (`backend/`): FastAPI on a Hugging Face Space (Docker), calling the HF Inference router (`MODEL_ID`, default Mistral-7B-Instruct-v0.3).
 
 ## Develop
 ```bash
