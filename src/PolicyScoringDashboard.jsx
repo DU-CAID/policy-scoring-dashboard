@@ -81,7 +81,7 @@ export default function PolicyScoringDashboard() {
 
   const exportCSV = () => {
     const esc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
-    const header = ["File", ...DIMENSIONS.flatMap((d) => [d.key, `${d.key} — Justification`])];
+    const header = ["File", ...DIMENSIONS.flatMap((d) => [d.key, `${d.key} - Justification`])];
     const rows = done.map(({ result }) => [
       result.filename,
       ...DIMENSIONS.flatMap((d) => {
@@ -130,12 +130,12 @@ export default function PolicyScoringDashboard() {
         <h1 className="mt-1 font-display text-3xl font-semibold text-ink">Score a policy document</h1>
         <p className="mt-3 text-[15px] leading-relaxed text-muted">
           Upload a policy document and an open-weights language model scores it 0–3 on five dimensions of
-          evidence-based policymaking — empirical research, formal evidence gathering, transparency, stakeholder
-          input, and evaluation — with a written justification for each score.
+          evidence-based policymaking - empirical research, formal evidence gathering, transparency, stakeholder
+          input, and evaluation - with a written justification for each score.
         </p>
         <p className="mt-2 text-sm text-muted">
           Accepts PDF, DOCX, and TXT up to 8 MB. To keep the free hosting fair, scoring is limited to 8 documents
-          per 30 minutes. Scores are model judgments — read the justifications, not just the numbers.
+          per 30 minutes. Scores are model judgments - read the justifications, not just the numbers.
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -275,7 +275,7 @@ export default function PolicyScoringDashboard() {
                   );
                 })}
               </dl>
-              <p className="mt-4 border-t border-line pt-3 text-xs text-muted">Scored by {selectedResult.model}. AI-generated assessment — verify against the source document.</p>
+              <p className="mt-4 border-t border-line pt-3 text-xs text-muted">Scored by {selectedResult.model}. AI-generated assessment - verify against the source document.</p>
             </div>
           )}
         </section>
