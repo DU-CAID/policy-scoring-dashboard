@@ -16,13 +16,13 @@ const About = () => (
   <Page title="About this tool">
     <p>
       This dashboard scores policy documents against a rubric grounded in evidence-based policymaking research.
-      Each document is evaluated on five dimensions — Use of Empirical Research, Formal Evidence-Gathering
-      Process, Transparency and Accessibility, Expert and Stakeholder Input, and Evaluation and Iteration — on a
+      Each document is evaluated on five dimensions: Use of Empirical Research, Formal Evidence-Gathering
+      Process, Transparency and Accessibility, Expert and Stakeholder Input, and Evaluation and Iteration. This is done on a
       0–3 scale with a written justification per dimension.
     </p>
     <p>
       Scoring is performed by an open-weights language model served through the Hugging Face Inference API. The
-      scores are model judgments, not ground truth: they are best used as a structured first read that points you
+      scores are model judgments, not ground truth. They are best used as a structured first read that points you
       to where a document is strong or thin, to be verified against the text itself.
     </p>
     <p>
@@ -51,7 +51,7 @@ export default function App() {
       <header className="border-b-2 border-crimson bg-white">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
           <Link to="/" className="font-display text-lg font-semibold tracking-tight">
-            Policy Scoring <span className="text-crimson">·</span> DU CAID
+            Policy Scoring <span className="text-crimson">|</span> DU CAID
           </Link>
           <nav className="flex gap-5">
             <NavLink to="/" end className={navClass}>Score</NavLink>
@@ -71,7 +71,7 @@ export default function App() {
       </main>
 
       <footer className="border-t border-line py-6 text-center text-xs text-muted">
-        Center for Analytics and Innovation with Data · University of Denver
+        Center for Analytics and Innovation with Data | University of Denver
       </footer>
     </div>
   );
