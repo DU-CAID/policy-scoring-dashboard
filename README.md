@@ -7,11 +7,11 @@ and CSV/PNG export.
 
 **Live app:** https://du-caid.github.io/policy-scoring-dashboard/
 
-## Architecture
+
 - **Frontend** (repo root): React 19 + Vite + Tailwind, deployed to GitHub Pages via `gh-pages`.
 - **Backend** (`backend/`): FastAPI on a Hugging Face Space (Docker), calling the HF Inference router (`MODEL_ID`, default Mistral-7B-Instruct-v0.3).
 
-## Develop
+## To develop
 ```bash
 npm install
 npm run dev              # http://localhost:5173
@@ -19,7 +19,7 @@ npm run dev              # http://localhost:5173
 VITE_API_URL=http://localhost:7860 npm run dev
 ```
 
-## Deploy
+## To deploy
 ```bash
 npm run deploy           # builds and pushes dist/ to the gh-pages branch
 ```
