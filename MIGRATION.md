@@ -1,4 +1,4 @@
-# Migration: personal site → DU-CAID
+# Migration: personal site to DU-CAID
 
 ## 1. Publish under DU-CAID
 1. Create the repo **DU-CAID/policy-scoring-dashboard** (public, empty — no README).
