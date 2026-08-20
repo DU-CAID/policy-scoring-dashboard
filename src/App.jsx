@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import PolicyScoringDashboard from "./PolicyScoringDashboard.jsx";
+import caidLogo from "./assets/caid-logo.png";
+import duLogo from "./assets/du-logo.png";
 
 const navClass = ({ isActive }) =>
   `text-sm font-medium underline-offset-4 ${isActive ? "text-crimson underline" : "text-ink hover:text-crimson"}`;
@@ -32,6 +34,12 @@ const About = () => (
   </Page>
 );
 
+const Research = () => (
+  <Page title="Research">
+    <p>Coming soon.</p>
+  </Page>
+);
+
 const Contact = () => (
   <Page title="Contact">
     <p>
@@ -50,11 +58,13 @@ export default function App() {
     <div className="min-h-screen">
       <header className="border-b-2 border-crimson bg-white">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-          <Link to="/" className="font-display text-lg font-semibold tracking-tight">
-            Policy Scoring <span className="text-crimson">|</span> DU CAID
+          <Link to="/" className="flex items-center gap-3" aria-label="Policy Scoring Dashboard home">
+            <img src={caidLogo} alt="CAID logo" className="h-10 w-auto rounded-md" />
+            <img src={duLogo} alt="University of Denver logo" className="h-7 w-auto" />
           </Link>
           <nav className="flex gap-5">
             <NavLink to="/" end className={navClass}>Score</NavLink>
+            <NavLink to="/research" className={navClass}>Research</NavLink>
             <NavLink to="/about" className={navClass}>About</NavLink>
             <NavLink to="/contact" className={navClass}>Contact</NavLink>
           </nav>
@@ -64,6 +74,7 @@ export default function App() {
       <main className="px-4 py-10 sm:px-6">
         <Routes>
           <Route path="/" element={<PolicyScoringDashboard />} />
+          <Route path="/research" element={<Research />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<PolicyScoringDashboard />} />
