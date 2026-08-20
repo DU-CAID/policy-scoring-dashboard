@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import PolicyScoringDashboard from "./PolicyScoringDashboard.jsx";
 import caidLogo from "./assets/caid-logo.png";
 import duLogo from "./assets/du-logo.png";
@@ -58,10 +58,12 @@ export default function App() {
     <div className="min-h-screen">
       <header className="border-b-2 border-crimson bg-white">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-          <Link to="/" className="flex items-center gap-3" aria-label="Policy Scoring Dashboard home">
-            <img src={caidLogo} alt="CAID logo" className="h-10 w-auto rounded-md" />
+          <div className="flex items-center gap-3">
+            <a href="https://du-caid.github.io" aria-label="Center for Analytics and Innovation with Data home">
+              <img src={caidLogo} alt="CAID logo" className="h-10 w-auto rounded-md" />
+            </a>
             <img src={duLogo} alt="University of Denver logo" className="h-7 w-auto" />
-          </Link>
+          </div>
           <nav className="flex gap-5">
             <NavLink to="/" end className={navClass}>Score</NavLink>
             <NavLink to="/research" className={navClass}>Research</NavLink>
