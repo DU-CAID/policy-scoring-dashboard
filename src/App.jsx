@@ -36,7 +36,52 @@ const About = () => (
 
 const Research = () => (
   <Page title="Research">
-    <p>Coming soon.</p>
+    <div>
+      <h2 className="font-display text-xl font-semibold text-ink">How Evidence Use in Congressional Research Changes Over Time</h2>
+      <p className="mt-1 text-sm italic">
+        From the paper "Volatility in Evidence Use: A Computational Analysis of Punctuated Equilibrium Theory"
+      </p>
+    </div>
+    <p>
+      Policymakers are often encouraged to base decisions on solid evidence. But how consistently does that happen,
+      and does it change over time? This project looks at more than 13,000 Congressional Research Service (CRS)
+      reports written between 2000 and 2021. CRS is Congress's nonpartisan research agency.
+    </p>
+    <p>
+      Each report was scored on five features of evidence-based policymaking using the policy scoring dashboard: use
+      of empirical research, a formal process for gathering evidence, transparency, input from experts and
+      stakeholders, and attention to evaluation and learning. Scores were first assigned by a large language model
+      and then extended to the full set of reports with machine learning. Reports were grouped into 20 policy areas,
+      such as health, defense, and agriculture. Each area was then labeled by how its evidence use behaved over time:
+      stable, gradually changing, or prone to sharp shifts.
+    </p>
+    <h3 className="font-display text-lg font-semibold text-ink">Main findings</h3>
+    <ul className="list-disc space-y-2 pl-5">
+      <li>
+        <strong className="text-ink">Most policy areas change gradually.</strong> Sudden, dramatic shifts in evidence
+        use are less common.
+      </li>
+      <li>
+        <strong className="text-ink">Public attention matters.</strong> When the public sees an issue as the country's
+        most important problem, evidence use in that area becomes much more likely to shift abruptly. Media coverage
+        and presidential attention are also linked to less stable evidence use.
+      </li>
+      <li>
+        <strong className="text-ink">Partisan control matters little.</strong> Whether one party controls both
+        Congress and the White House has almost no effect. This suggests CRS analysis is largely buffered from
+        short-term partisan politics.
+      </li>
+      <li>
+        <strong className="text-ink">Policy areas differ.</strong> Government Operations, Macroeconomics, and Defense
+        see the most volatile evidence use. Agriculture, Public Lands, and Transportation are among the steadiest,
+        which likely reflects well-established expert routines.
+      </li>
+    </ul>
+    <p>
+      <strong className="text-ink">Why it matters:</strong> Evidence use in policymaking isn't fixed. It responds to
+      the political environment. Building strong analytic capacity and institutional expertise may help keep evidence
+      use steady, even when an issue becomes politically heated.
+    </p>
   </Page>
 );
 
