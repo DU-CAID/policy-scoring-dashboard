@@ -39,7 +39,7 @@ const Research = () => (
     <div>
       <h2 className="font-display text-xl font-semibold text-ink">How Evidence Use in Congressional Research Changes Over Time</h2>
       <p className="mt-1 text-sm italic">
-        From the paper "Volatility in Evidence Use: A Computational Analysis of Punctuated Equilibrium Theory"
+        From the paper "Volatility in Evidence Use: A Computational Analysis of Punctuated Equilibrium Theory" forthcoming in _Policy Studies Journal_.
       </p>
     </div>
     <p>
